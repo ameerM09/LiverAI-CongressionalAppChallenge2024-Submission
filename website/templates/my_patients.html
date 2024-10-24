@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}My Patients{% endblock %}
+
+{% block page_content %}
+    <h2>
+        <center>
+            <strong>
+                Home Page
+            </strong>
+        </center>
+    </h2>
+
+    <br>
+
+    <div align="center">
+        <a href="/results" class="btn text-light" style="background-color: #ff5411;">Derive Segmentations on a New Scan</a>
+    </div>
+
+    <br>
+
+    <p align = "center" style = "font-size: 20px;">
+        Welcome to LiverAI, where clinicians can perform liver segmentation easily.
+    </p>
+
+    <div class = "container" align = "center">
+        <div align = "row-align-item-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="#ff5411" class="bi bi-card-image" viewBox="0 0 16 16">
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+        </div>
+
+        <p style="font-size: 20px;">Simply upload a medical image</p>
+
+        <br>
+
+        <div align = "row-align-item-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="#ff5411" class="bi bi-lungs-fill" viewBox="0 0 16 16">
+                <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1m3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.5.5 0 0 0 9 7.214V8.33z"/>
+            </svg>
+        </div>
+
+        <p style="font-size: 20px;">View the segmentations of the organ</p>
+        
+        <br>
+
+        <div align = "row-align-item-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="#ff5411" class="bi bi-download" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+              </svg>
+        </div>
+
+        <p style="font-size: 20px;">Download and share with your team</p>
+
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Hidden loader -->
+    <div class="loader" style="display:none;"></div>
+
+{% endblock %}
